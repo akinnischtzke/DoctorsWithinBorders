@@ -11,8 +11,5 @@ The basic steps for the project were to
        3) develop a predictive model that could accurately predict the value of the HPSA score in counties that currently have a score,  
        4) make an interactive dashboard to explore the predictions on a county-by-county basis (see my other repository, "countymap-app"             for more information about the dashboard).
 
-By developing a predictive model for HPSA scores, the goal is that we can immediately:
-       1) identify areas of greatest need around the country,  
-       2) automatically update scores as regions change over time, and  
-       3) pinpoint specific, actionable aspects of healthcare in the local region that are causing an area to have greater than average             primary care shortage.
+By developing a predictive model for HPSA scores, the goal is that we can immediately identify areas of greatest need around the country, automatically update scores as regions change over time, and pinpoint specific, actionable aspects of healthcare in the local region that are causing an area to have greater than average primary care shortage.
 
