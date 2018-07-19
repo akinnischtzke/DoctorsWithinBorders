@@ -8,7 +8,7 @@ For this project, I focused on The Bureau of Health Workforce process, which has
 The basic steps for the project were:  
        1) identify and find relevant sources of data (US Census Bureau, CDC, Medicare),  
        2) clean and merge the datasets together on a common geographic region,  
-       3) develop a predictive model that could accurately predict the value of the HPSA score in counties that currently have a score, then use this to estimate HPSA scores for ALL counties in the US. 
+       3) develop a predictive model that could accurately predict the value of the HPSA score in counties that currently have a score, then use this to estimate HPSA scores for ALL counties in the US.  
        4) make an interactive dashboard to explore the predictions on a county-by-county basis (see my other repository, "countymap-app"             for more information about the dashboard).
 
 By developing a predictive model for HPSA scores, the goal is that we can immediately identify areas of greatest need around the country, automatically update scores as regions change over time, and pinpoint specific, actionable aspects of healthcare in the local region that are causing an area to have greater than average primary care shortage.
