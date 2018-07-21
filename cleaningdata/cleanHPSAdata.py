@@ -1,20 +1,16 @@
 
-#inputs:
-# directory, filename
 
-import pandas as pd
-from us import states
 import matplotlib.pyplot as plt
+import pandas as pd
 import seaborn as sns
+from us import states
 
-basedir = '/Users/amandakinnischtzke/Dropbox/amanda/insightdatascience/projectdata/'
-folder = 'HRSA data/'
 
 # the HPSA data:
 database = 'BCD_HPSA_FCT_DET_PC.csv' # HPSA scores for primary care
 
 # Full dataset
-df_hpsa = pd.read_csv(basedir + folder + database, low_memory=False)#,encoding = "ISO-8859-1")
+df_hpsa = pd.read_csv(database, low_memory=False)#,encoding = "ISO-8859-1")
 print("Total dataset size: ", df_hpsa.shape)
 
 # Drop all designations that are no longer active (NOTE: lose a lot of rows when doing this)
@@ -52,7 +48,7 @@ print("Drop several columns we don't need: ", df_hpsa.shape)
 df_hpsa.drop_duplicates(subset=['County Equivalent Name'],inplace=True)
 print("Remove duplicate county entries: ", df_hpsa.shape)
 
-df_hpsa.to_csv("/Users/amandakinnischtzke/Dropbox/amanda/insightdatascience/projectdata/cleanedData/" + "hpsa_data_cleaned.csv")
+df_hpsa.to_csv('hpsa_data_cleaned.csv')
 
 
 
